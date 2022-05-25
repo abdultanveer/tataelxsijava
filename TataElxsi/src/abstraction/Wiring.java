@@ -1,14 +1,21 @@
 package abstraction;
 
 public class Wiring {
+	SwitchBoardListener sbl;
 	
-	public static void main(String[] args) {
-		SwitchBoardListener sbl = new GEAppliances();
+	
+		public Wiring(SwitchBoardListener sbl) {
+		
+		this.sbl = sbl;
+	
+
+		 sbl = new GEAppliances();
 				//HavellsAppliances();
 		sbl.switchOne();
 		sbl.switchTwo();
 		sbl.switchThree();
 		sbl.switchFour();
-	}
+	
 
+}
 }
